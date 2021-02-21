@@ -41,7 +41,7 @@
         app:layout_constraintHorizontal_bias="0.753"
         app:layout_constraintStart_toEndOf="@+id/middleName"
         app:layout_constraintTop_toBottomOf="@+id/newuser"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <EditText
         android:id="@+id/firstName"
@@ -60,7 +60,39 @@
         app:layout_constraintEnd_toStartOf="@+id/middleName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newuser"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.18" />
+
+    <EditText
+        android:id="@+id/PerferredDay"
+        android:layout_width="88dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/edit_message18"
+        android:inputType="textPersonName"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstName"
+        app:layout_constraintEnd_toStartOf="@+id/PerferredTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newuser" />
+
+    <EditText
+        android:id="@+id/PerferredTime"
+        android:layout_width="88dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/edit_message19"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/lastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PerferredDay"
+        app:layout_constraintTop_toBottomOf="@+id/newuser" />
 
     <EditText
         android:id="@+id/Gender"
@@ -160,27 +192,21 @@
         android:id="@+id/SIN"
         android:layout_width="88dp"
         android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/edit_message17"
         android:inputType="textPersonName"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/PhoneNumber"
-        app:layout_constraintTop_toBottomOf="@+id/ZipPostCode"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintStart_toEndOf="@+id/emailpassword"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
 
     <EditText
         android:id="@+id/PhoneNumber"
         android:layout_width="88dp"
         android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
@@ -188,46 +214,59 @@
         android:hint="@string/edit_message16"
         android:inputType="textPersonName"
         android:textSize="11.5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/SIN"
-        app:layout_constraintStart_toEndOf="@+id/EmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/ZipPostCode"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintBottom_toTopOf="@+id/SIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ZipPostCode"
+        app:layout_constraintTop_toBottomOf="@+id/StateProvince" />
 
     <EditText
         android:id="@+id/EmailAddress"
         android:layout_width="88dp"
         android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/edit_message15"
         android:inputType="textPersonName"
         android:textSize="12.5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/PhoneNumber"
+        app:layout_constraintEnd_toStartOf="@+id/emailpassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ZipPostCode"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintTop_toBottomOf="@+id/ZipPostCode" />
+
+    <EditText
+        android:id="@+id/emailpassword"
+        android:layout_width="88dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/edit_message20"
+        android:inputType="textPersonName"
+        android:textSize="11.5sp"
+        app:layout_constraintEnd_toStartOf="@+id/SIN"
+        app:layout_constraintStart_toEndOf="@+id/EmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
 
     <EditText
         android:id="@+id/ZipPostCode"
         android:layout_width="88dp"
         android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/edit_message14"
         android:inputType="textPersonName"
         android:textSize="12.5sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintBottom_toTopOf="@+id/EmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/PhoneNumber"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StateProvince"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintTop_toBottomOf="@+id/City" />
 
     <EditText
         android:id="@+id/StateProvince"
@@ -335,7 +374,7 @@
         app:layout_constraintEnd_toStartOf="@+id/lastName"
         app:layout_constraintStart_toEndOf="@+id/firstName"
         app:layout_constraintTop_toBottomOf="@+id/newuser"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <Button
         android:id="@+id/Submit"
@@ -346,6 +385,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/emailpassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

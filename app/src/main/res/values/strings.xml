@@ -28,4 +28,7 @@
     <string name="edit_message15">Email Address</string>
     <string name="edit_message16">Phone Number</string>
     <string name="edit_message17">SIN #</string>
+    <string name="edit_message18">Perferred Day</string>
+    <string name="edit_message19">Perferred Time</string>
+    <string name="edit_message20">Email Password</string>
 </resources>
