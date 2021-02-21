@@ -1,8 +1,12 @@
 package com.example.allpointments;
 
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,6 +41,33 @@ public class MainActivity extends AppCompatActivity {
 
         String[][] userInfo = new String[5][18];
         cypher.Decrypt(userInfo,mudwater);
+
+        Button addUser = (Button) findViewById(R.id.addUser);
+
+        Button schedule = (Button) findViewById(R.id.schedule);
+        schedule.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (v.getId() == R.id.schedule) {
+                            Intent intent = new Intent(MainActivity.this, Schedule.class);
+                            startActivity(intent);
+                        }
+                    }
+
+                });
+
+        addUser.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (v.getId() == R.id.addUser) {
+                            Intent intent = new Intent(MainActivity.this, enterUserInfo.class);
+                            startActivity(intent);
+                        }
+                    }
+
+                });
 
 
 
