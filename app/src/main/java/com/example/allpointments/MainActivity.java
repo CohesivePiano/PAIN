@@ -76,6 +76,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    public String[][] userInfo = new String[5][19];
+
+
+    public void setUser(String newString[], int current)
+    {
+        for(int i = 0; i < userInfo[0].length; i++)
+        {
+            userInfo[current][i] = newString[i];
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
