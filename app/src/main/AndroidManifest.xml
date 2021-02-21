@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Allpointments">
-        <activity android:name=".enterUserInfo"></activity>
+        <activity android:name=".Failure"></activity>
+        <activity android:name=".Success" />
+        <activity android:name=".enterUserInfo" />
         <activity android:name=".Schedule" />
         <activity
             android:name=".MainActivity"

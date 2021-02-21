@@ -2,7 +2,10 @@ package com.example.allpointments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class Schedule extends AppCompatActivity {
 
@@ -10,41 +13,41 @@ public class Schedule extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
-        /*Button choice1 = (Button) findViewById(R.id.choice1);
-        schedule.setOnClickListener(
+        Button choice1 = (Button) findViewById(R.id.choice1);
+        choice1.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         if (v.getId() == R.id.choice1) {
-                            Intent intent = new Intent(Schedule.this, //FILL THIS IN WITH THE CLASS YOU NEED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!);
+                            Intent intent = new Intent(Schedule.this, Success.class);
                             startActivity(intent);
                         }
                     }
 
                 });
         Button choice2 = (Button) findViewById(R.id.choice2);
-        schedule.setOnClickListener(
+        choice2.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         if (v.getId() == R.id.choice2) {
-                            Intent intent = new Intent(Schedule.this, Tester.class);
+                            Intent intent = new Intent(Schedule.this, Success.class);
                             startActivity(intent);
                         }
                     }
 
                 });
         Button choice3 = (Button) findViewById(R.id.choice3);
-        schedule.setOnClickListener(
+        choice3.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         if (v.getId() == R.id.choice3) {
-                            Intent intent = new Intent(Schedule.this, Tester.class);
+                            Intent intent = new Intent(Schedule.this, Success.class);
                             startActivity(intent);
                         }
                     }
 
-                });*/
+                });
     }
 }
