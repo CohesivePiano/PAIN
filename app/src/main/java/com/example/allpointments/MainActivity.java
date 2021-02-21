@@ -1,6 +1,5 @@
 package com.example.allpointments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -21,20 +20,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button addUser = (Button) findViewById(R.id.addUser);
-
-
+        Button editUsers = (Button) findViewById(R.id.editUsers);
         Button schedule = (Button) findViewById(R.id.schedule);
-        schedule.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if (v.getId() == R.id.schedule) {
-                            Intent intent = new Intent(MainActivity.this, FirstFragment.class);
-                            startActivity(intent);
-                        }
-                    }
 
-                });
+
+
+
     }
 
 
