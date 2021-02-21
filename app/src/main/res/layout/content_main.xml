@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -30,6 +31,9 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:text="Add user"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="36sp"
+        app:backgroundTint="#F44336"
         app:layout_constraintBottom_toTopOf="@+id/editUsers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +50,8 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:text="Edit/view users"
+        android:textSize="30sp"
+        app:backgroundTint="#4CAF50"
         app:layout_constraintBottom_toTopOf="@+id/schedule"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +68,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="100dp"
         android:text="Schedule appointment"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
