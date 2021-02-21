@@ -8,20 +8,40 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EDcrypt cypher = new EDcrypt();
         setContentView(R.layout.activity_main);
+
+        String mudwater = "";
+
         try {
             FileReader read = new FileReader("logs.txt");
+            mudwater = read.toString();
+
         } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            FileWriter write = new FileWriter("logs.txt");
+
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
         String[][] userInfo = new String[5][18];
+        cypher.Decrypt(userInfo,mudwater);
+
+
+
+
+
 
 
     }
