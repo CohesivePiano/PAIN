@@ -309,7 +309,7 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/edit_message4"
+        android:hint="@string/edit_message5"
         android:inputType="textPersonName"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
