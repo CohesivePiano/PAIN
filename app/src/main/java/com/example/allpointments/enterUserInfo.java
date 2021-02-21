@@ -10,7 +10,7 @@ public class enterUserInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_user_info);
-        Button Submit = (Button) findViewById(R.id.Submit);
+       /* Button Submit = (Button) findViewById(R.id.Submit);
         Submit.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -21,6 +21,6 @@ public class enterUserInfo extends AppCompatActivity {
                         }
                     }
 
-                });
+                });*/
     }
 }

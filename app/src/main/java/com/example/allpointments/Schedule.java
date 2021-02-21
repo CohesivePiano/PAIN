@@ -10,7 +10,7 @@ public class Schedule extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
-        Button choice1 = (Button) findViewById(R.id.choice1);
+        /*Button choice1 = (Button) findViewById(R.id.choice1);
         schedule.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -45,6 +45,6 @@ public class Schedule extends AppCompatActivity {
                         }
                     }
 
-                });
+                });*/
     }
 }
