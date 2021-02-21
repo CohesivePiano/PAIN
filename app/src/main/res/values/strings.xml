@@ -9,6 +9,23 @@
 
     <string name="hello_first_bruh">Hello first bruh</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_message">New User ✎</string>
+    <string name="button_send">Submit</string>
+    <string name="edit_message1">First Name</string>
+    <string name="edit_message2">Middle Name</string>
+    <string name="edit_message3">Last Name</string>
+    <string name="edit_message4">Gender</string>
+    <string name="edit_message5">Title</string>
+    <string name="edit_message6">Day</string>
+    <string name="edit_message7">Month</string>
+    <string name="edit_message8">Year</string>
+    <string name="edit_message9">Address 1</string>
+    <string name="edit_message10">Address 2</string>
+    <string name="edit_message11">City</string>
+    <string name="edit_message12">Province/State</string>
+    <string name="edit_message13">Country</string>
+    <string name="edit_message14">Zip/Post Code</string>
+    <string name="edit_message15">Email Address</string>
+    <string name="edit_message16">Phone Number</string>
+    <string name="edit_message17">SIN #</string>
 </resources>
