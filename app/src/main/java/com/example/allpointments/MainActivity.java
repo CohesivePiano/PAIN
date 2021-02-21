@@ -1,38 +1,50 @@
 package com.example.allpointments;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
-
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Button;
-
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EDcrypt cypher = new EDcrypt();
         setContentView(R.layout.activity_main);
-        Button addUser = (Button) findViewById(R.id.addUser);
-        Button editUsers = (Button) findViewById(R.id.editUsers);
-        Button schedule = (Button) findViewById(R.id.schedule);
+
+        String mudwater = "";
+
+        try {
+            FileReader read = new FileReader("logs.txt");
+            mudwater = read.toString();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            FileWriter write = new FileWriter("logs.txt");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String[][] userInfo = new String[5][18];
+        cypher.Decrypt(userInfo,mudwater);
+
+
+
 
 
 
 
     }
-
-
-
-
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
